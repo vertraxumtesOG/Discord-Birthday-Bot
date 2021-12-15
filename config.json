@@ -1,0 +1,7 @@
+{
+    "token" : "TOKEN",
+    "prefix" : "!",
+    "guild" : "GuildID",
+    "bdaychannel" : "ChannelID",
+    "bdayrole" : "RoleID"
+}

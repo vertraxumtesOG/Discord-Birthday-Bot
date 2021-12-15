@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "discord": "^0.8.2",
+    "discord.js": "^12.5.3",
+    "moment": "^2.29.1"
+  }
+}
