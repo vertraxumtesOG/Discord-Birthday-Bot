@@ -24,9 +24,9 @@ async function nextday(){
         const userId = file.replace('.json', '')
         if(day == user.day && month == user.month){
             const bdayEmbed = new Discord.MessageEmbed()
-                .setTitle(`Neuer Geburtstag!`)
+                .setTitle(`New Birthday!`)
                 .setColor('BLUE')
-                .setDescription(`<@${userId}> hat heute Geburtstag und wird \`${year - user.year} Jahre\` alt! Wünscht ihm alles gute!`)
+                .setDescription(`<@${userId}> has today Birthday he is now \`${year - user.year} Years old!\` Wish him all the best!`)
             const channel = client.channels.cache.get(config.bdaychannel);
             channel.send(bdayEmbed)
             const bdayuser = await guild.members.fetch(userId)
@@ -123,7 +123,7 @@ client.on('message',async message=> {
             const errorEmbed = new Discord.MessageEmbed()
                     .setTitle(`» Birthdays`)
                     .setColor('DARK_RED')
-                    .setDescription('Falsche Nutzung! Nutze `bday set <Date>` oder `bday list`!')
+                    .setDescription('Use this Format `bday set <Date>` or `bday list`!')
                 message.channel.send(errorEmbed)
                 
         }
